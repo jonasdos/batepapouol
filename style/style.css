@@ -1,0 +1,57 @@
+body {
+  display: flex;
+  justify-content: center;
+  font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+main {
+  min-width: 375px;
+  height: 670px;
+  background-color: #F3F3F3;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+
+
+
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  padding: 16px 22px 11px 22px;
+  background-color: rgba(255, 255, 255, 1);
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.05);
+
+}
+
+article {
+
+  display: flex;
+  flex-direction: column-reverse;
+  flex: 1;
+}
+
+.msgpublic {
+  padding: 8px;
+  background-color: rgba(220, 220, 220, 1);
+  margin: 4px 0px;
+}
+
+footer {
+  background-color: rgba(255, 255, 255, 1);
+  height: 80px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.05);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 22px 11px 22px;
+
+}
+
+footer input {
+  border: none;
+}
