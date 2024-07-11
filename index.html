@@ -18,18 +18,19 @@
       <img src="./assets/logouol.png" alt="">
     </div>
     <div>
-      <img src="./assets/people.svg" alt="">
+      <img class="configtoggle" src="./assets/people.svg" alt="">
     </div>
   </header>
 
   <article>
-    <div class="msgpublic">
-      <p><span class="horario">(09:22:48)</span><span class="remetente">Jonas</span> para <span class="endereco">João</span>: Olar reservadamente</p>
+    <div class="msg">
+      <p><span class="horario">(09:22:48)</span><span class="nome">Jonas</span> para <span class="nome">João</span>: Olar reservadamente para todos </p>
     </div>
+    
   </article>
 
   <footer>
-    <div>
+    <div class="inputbox">
       <input type="text" placeholder="Escreva aqui">
       <p>Enviando para Todos(público)</p>
     </div>
@@ -38,5 +39,54 @@
     </div>
   </footer>
 </main>
+<main id="config">
+  <div id="options">
+    <h1>Escolha um contato<br> para enviar mensagem:</h1>
+    <div class="item"> 
+      <div class="contato">
+        <img class="icon" src="./assets/people.svg" alt="">
+        <p>Todos</p>
+     </div>
+    </div>
+    <div class="item"> 
+      
+      <div class="contato">
+        <img class="icon" src="./assets/contato.svg" alt="">
+      <p>João</p>
+    </div>
+    <svg width="13" height="11" viewBox="0 0 13 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M11 2L4.7 9L2 6.375" stroke="#28BB25" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+   
+  </div>
+    <div class="item"> 
+      <div class="contato">
+        <img src="./assets/contato.svg" alt="">
+        <p>Maria</p>
+      </div>
+    </div>
+    
+      <h1> Escolha a visibilidade</h1>
+      <div class="item">
+        <div class="contato">
+          <img src="./assets/cadeado.svg" alt="">
+          <p>Público</p>
+        </div>
+      </div>
+      <div class="item">
+        <div class="contato">
+        <img src="./assets/cadeado.svg" alt="">
+        <p>Reservadamente</p>
+      </div>
+      <svg width="13" height="11" viewBox="0 0 13 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M11 2L4.7 9L2 6.375" stroke="#28BB25" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+    </div>
+    
+  </div>
+  <div id="tg" class="configtoggle"></div>
+</main>
+<script type="text/javascript" src="./scripts/scripts.js"></script>
 </body>
+
 </html>
