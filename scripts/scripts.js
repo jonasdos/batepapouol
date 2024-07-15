@@ -112,3 +112,4 @@ function renderizaContatos(contatos, usuario) {
         <p>Reservadamente</p>
       </div>`
 }
+let test = 'Test'
