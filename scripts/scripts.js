@@ -14,6 +14,8 @@ function chamaConfig() {
 }
 
 // Configurações da mensagem
+const uuid = 'aa27ddac-3812-4d43-befe-480ebb7829e5'
+const lksala = `https://mock-api.driven.com.br/api/v6/uol/participants/${uuid}`
 const listaContatos = [
   {
     nome: 'Todos',
@@ -41,9 +43,21 @@ const listaVisibility = [
     status: ''
   }
 ]
-
+// Requisições 
+function enviaNome(nome) {
+  const requi = axios.post(lksala, { name: nome })
+    .then(resp => { console.log('Resposta: ', resp) })
+    .catch(error => { console.log(error) })
+}
+//enviaNome('Joonas')
+function dadosArmazenados() {
+  const requi = axios.get(lksala)
+    .then(resp => { console.log(resp) })
+    .catch(error => console.log(error))
+  console.log(lksala)
+}
+dadosArmazenados()
 function limpaConfig() {
-  // seleciona o elemento
   const elemento = document.querySelector('#options')
   elemento.innerHTML = ''
   carregaContatos('Mario')
@@ -112,4 +126,3 @@ function renderizaContatos(contatos, usuario) {
         <p>Reservadamente</p>
       </div>`
 }
-let test = 'Test'
