@@ -20,11 +20,11 @@ main {
 }
 
 #config {
-  z-index: 10;
+  z-index: 9;
   background-color: #41414171;
   position: fixed;
   border-radius: 5px;
-  display: flex;
+  display: none;
   align-items: end;
   flex-direction: row-reverse;
 
@@ -129,8 +129,9 @@ article {
 .msg {
   padding: 16px 8px;
   background-color: rgba(255, 255, 255, 1);
-  margin: 4px 0px;
+  margin: 2px 0px;
   display: flex;
+  border-radius: 2px;
 
 }
 
@@ -181,4 +182,8 @@ footer input::placeholder {
 footer {
   color: rgba(80, 80, 80, 1);
   line-height: 25px;
+}
+
+.botaoEnviar {
+  cursor: pointer;
 }
